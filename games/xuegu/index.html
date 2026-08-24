@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#0b071e" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>學之谷</title>
+    <script type="module" crossorigin src="../../assets/xuegu-BqwBgHbJ.js"></script>
+    <link rel="modulepreload" crossorigin href="../../assets/phaser-D9eAxufv.js">
+    <link rel="stylesheet" crossorigin href="../../assets/xuegu-DVHaLHAP.css">
+  </head>
+  <body>
+    <div id="game"></div>
+    <!--
+      直立拿手機時畫布只剩很小一條（960×540 等比縮進 390 寬的螢幕只有 219 高），
+      按鈕會小到按不準。用純 CSS 蓋一層提示，不進 Phaser 也就不佔任何效能。
+    -->
+    <div id="rotate-hint">
+      <div class="rotate-icon">📱</div>
+      <p>把手機轉成橫的比較好玩</p>
+    </div>
+  </body>
+</html>

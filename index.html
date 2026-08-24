@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>遊戲選單</title>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 28px;
+        background: #0b071e;
+        color: #fff;
+        font-family: system-ui, "Noto Sans TC", sans-serif;
+        padding: 24px;
+      }
+      h1 { font-size: 26px; font-weight: 600; letter-spacing: 2px; }
+      p.sub { color: #8f86b0; font-size: 14px; }
+      ul { list-style: none; display: grid; gap: 14px; width: min(420px, 100%); }
+      a {
+        display: block;
+        padding: 18px 20px;
+        border: 1px solid #2b1b4d;
+        border-radius: 12px;
+        background: #140d2e;
+        color: #fff;
+        text-decoration: none;
+        transition: border-color 0.15s, transform 0.15s;
+      }
+      a:hover { border-color: #00f3ff; transform: translateY(-2px); }
+      a strong { display: block; font-size: 18px; margin-bottom: 4px; }
+      a span { color: #8f86b0; font-size: 13px; }
+    </style>
+  </head>
+  <body>
+    <h1>sgame</h1>
+    <p class="sub">Phaser 4 遊戲引擎</p>
+    <ul>
+      <li>
+        <a href="./games/xuegu/index.html">
+          <strong>學之谷</strong>
+          <span>楓之谷風格橫向卷軸動作　打怪、升級、學招式</span>
+        </a>
+      </li>
+    </ul>
+  </body>
+</html>
